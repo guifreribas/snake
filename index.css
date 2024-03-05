@@ -1,0 +1,27 @@
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    canvas {
+        border: 2px solid #333;
+        background-color: #fff;
+    }
+
+    button {
+
+        padding: 16px 64px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+    }

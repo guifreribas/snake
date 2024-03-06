@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" type="text/css" />
-
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
     <script src="./index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <button id="button">Go!</button>
+    <div>
+      <section class="score">
+        <h3 class="score__title">Score</h3>
+        <p class="score__number">0</p>
+      </section>
+      <section>
+        <label>Choose level</label>
+        <select name="" id="">
+          <option value="3">Easy</option>
+          <option value="2">Medium</option>
+          <option value="1">Hard</option>
+          <option value="0">God Mode</option>
+        </select>
+      </section>
+    </div>
+    <button id="button">Start</button>
     <canvas id="canvas" width="400" height="400"></canvas>
   </body>
 </html>

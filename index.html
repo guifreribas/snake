@@ -9,12 +9,16 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <section class="score">
-        <h3 class="score__title">Score</h3>
-        <p class="score__number">0</p>
-      </section>
-      <section>
+    <article>
+      <div class="topSection">
+        <button id="button">Start</button>
+        <section class="score">
+          <h3 class="score__title">Score</h3>
+          <p class="score__number">0</p>
+        </section>
+      </div>
+
+      <div class="levelSection">
         <label>Choose level</label>
         <select name="" id="">
           <option value="3">Easy</option>
@@ -22,9 +26,9 @@
           <option value="1">Hard</option>
           <option value="0">God Mode</option>
         </select>
-      </section>
-    </div>
-    <button id="button">Start</button>
+      </div>
+    </article>
+
     <canvas id="canvas" width="400" height="400"></canvas>
   </body>
 </html>

@@ -7,7 +7,7 @@
         align-items: center;
         height: 100vh;
         margin: 0;
-        background: linear-gradient(129deg, rgba(20, 101, 38, 1) 8%, rgba(7, 51, 6, 1) 62%);
+        background: linear-gradient(129deg, rgba(20, 101, 38, 1) 8%, rgb(14, 90, 13) 62%);
         position: relative;
         color: #efefef;
     }
@@ -15,24 +15,28 @@
     section {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        margin: auto;
+        justify-content: space-around;
         gap: 8px;
         align-items: center;
-        border: 1px solid #efefef;
         border-radius: 8px;
         padding: 8px 32px;
+        box-shadow: 2px 2px 4px 0 #000;
     }
 
-    div {
+    article {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 16px;
+        width: 400px;
     }
 
     canvas {
         box-sizing: border-box;
-        border: 4px solid #cfcfcf;
+        border: 2px solid #cfcfcf;
         background-color: #fff;
+        box-shadow: 2px 2px 4px 0 #000;
+
     }
 
     button {
@@ -40,14 +44,17 @@
         font-size: 16px;
         border: none;
         border-radius: 6px;
-        background-color: #cfcfcf;
-        color: #000;
-        border: 1px solid #000;
+        background-color: #333;
+        color: #fff;
+        /* border: 1px solid #000; */
         cursor: pointer;
+        width: 100%;
+        text-transform: uppercase;
+        box-shadow: 2px 2px 4px 0 #000;
     }
 
     button:hover {
-        box-shadow: 2px 2px 4px 0 #000;
+        box-shadow: none;
     }
 
     .counter {
@@ -55,7 +62,7 @@
         margin: auto;
         top: 150px;
         z-index: 1;
-        width: 150px;
+        /* width: 150px; */
         border-radius: 24px;
         aspect-ratio: 1/1;
         border: 4px solid #333;
@@ -68,16 +75,37 @@
     }
 
     select {
-        padding: 4px 16px;
+        padding: 12px 48px;
         border-radius: 4px;
     }
 
+    .topSection {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 16px;
+    }
 
     .score {
         display: flex;
         align-items: center;
+        width: 100%;
     }
 
     .score__number {
         font-size: larger;
+    }
+
+    .levelSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 8px 16px;
+        gap: 16px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 2px 2px 4px 0 #000;
+        box-sizing: border-box;
+        border-radius: 8px;
+
     }

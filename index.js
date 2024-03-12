@@ -107,12 +107,7 @@ function snakeMovement() {
 }
 
 function snakeCollision() {
-  if (
-    snake[0].x < x + ballRadius &&
-    snake[0].x + snakePartSize > x - ballRadius &&
-    snake[0].y < y + ballRadius &&
-    snake[0].y + snakePartSize > y - ballRadius
-  ) {
+  if (snake[0].x < x && snake[0].x + snakePartSize > x - ballRadius * 2 && snake[0].y < y && snake[0].y + snakePartSize > y - ballRadius * 2) {
     x = Math.floor(Math.random() * canvas.width);
     y = Math.floor(Math.random() * canvas.height);
     snake.push({ x: snake[snake.length - 1].x, y: snake[snake.length - 1].y });
